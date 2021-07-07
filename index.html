@@ -1,0 +1,648 @@
+<!DOCTYPE HTML>
+<html lang="EN">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <script src="HackTimer.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.inview.js"></script>
+
+    <div id="navbar">
+        <div id="navbar-inner">
+            <div id="logo"></div>
+            <div id="text-right">
+                <div class="navbar-text txt-selected" id="home">
+                    Home
+                </div>
+                <div class="navbar-text" id="locations-hours">
+                    Locations & Trading Hours
+                </div>
+                <div class="navbar-text" id="menu">
+                    Menu
+                </div>
+                <div class="navbar-text" id="language">
+                    <div id="flag" class="cover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="showcase-slider">
+        <div class="background-overlay" style="background-color: #000;"></div>
+        <div id="contents">
+            <div id="slider-left">
+                <div id="slider-left-contents"></div>
+            </div>
+            <div id="todco-txt-container">
+                <a id="est-txt">est.</a>
+                <a id="title-txt" class="slider-shadow">
+                    The<br>Oakleigh<br>Donut<br>Co
+                </a>
+                <a id="year-txt">2017</a>
+                <div id="slider-buttons">
+                    <div class="slider-button" id="deliveries">
+                        <div class="slider-button-icon" style="background-image: url('pics/icons/iconfinder_1291768_delivery_fast_fast delivery_instant_quick_icon_128px (1).png');"></div>
+                        <div class="slider-button-txt">Deliveries</div>
+                    </div>
+                    <div class="slider-button" id="deliveries">
+                        <div class="slider-button-icon" style="background-image: url('pics/icons/iconfinder_4213434_control_list_menu_more_options_icon_256px.png');"></div>
+                        <div class="slider-button-txt">Menu</div>
+                    </div>
+                </div>
+                <div id="slider-dots">
+                    <div class="slider-dot slider-shadow"></div>
+                    <div class="slider-dot slider-shadow"></div>
+                    <div class="slider-dot slider-shadow"></div>
+                    <div class="slider-dot slider-shadow"></div>
+                    <div class="slider-dot slider-shadow"></div>
+                </div>
+            </div>
+            <div id="slider-right">
+                <div id="slider-right-contents"></div>
+            </div>
+        </div>
+    </div>
+    <div id="welcome-items">
+        <div id="welcome-box-items">
+            <div class="welcome-box" id="welcome-init">
+                <div class="welcome-box-title">Welcome</div>
+                <div class="welcome-box-todco"></div>
+                <div class="welcome-box-text">
+                    At TODCO, we have been proudly serving artisan doughnuts and specialty coffee since July 2017. <br><br>
+                    We strive to produce the freshest doughnuts in Melbourne together with a memorable in-store experience. Our donuts are made fresh every hour of the day to satisfy your tastebuds.
+                </div>
+                <div id="cooking">
+                    <div id="cooking-info-container">
+                        <div id="cooking-icon"></div>
+                        <div id="cooking-text">See what's cooking in our kitchen</div>
+                    </div>
+                    <div id="cooking-arrow"></div>
+                </div>
+            </div>
+            <div class="welcome-box" style="margin-left: 30px;" id="welcome-locations">
+                <div class="welcome-box-title">Visit our locations</div>
+                <div class="welcome-box-todco"></div>
+                <div class="welcome-box-text">
+                    We’re now available at two locations -- our Oakleigh shop as well as our South Yarra shop
+                </div>
+                <div class="todco-location">
+                    <div class="location-title">TODCO Oakleigh</div>
+                    <div class="location-detail">
+                        <div class="detail-icon cover"></div>
+                        <div class="detail-txt">36 Portman St, Oakleigh VIC 3166</div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="detail-icon cover" style="background-image: url(pics/icons/iconfinder_352510_local_phone_icon_256px.png);"></div>
+                        <div class="detail-txt">(03) 9569 8172</div>
+                    </div>
+                </div>
+                <div class="todco-location">
+                    <div class="location-title">TODCO South Yarra</div>
+                    <div class="location-detail">
+                        <div class="detail-icon cover"></div>
+                        <div class="detail-txt">187 Commercial Rd, South Yarra VIC 3141</div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="detail-icon cover" style="background-image: url(pics/icons/iconfinder_352510_local_phone_icon_256px.png);"></div>
+                        <div class="detail-txt">(03) 9826 2562</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="availability" class="cover">
+        <div class="background-overlay" style="background-color: #000;"></div>
+        <div id="availability-txt">
+            <div id="store-status" class="store-open">
+                <a id="store-status-txt" class="txt-store-open">WE ARE OPEN</a>
+            </div>
+            <div id="availability-content">
+                <a id="availability-text">We're open right now.  We close at 9.30pm
+                </a>
+                <!-- <div id="availability-arrow" class="cover"></div> -->
+            </div>
+        </div>
+    </div>
+    <div id="cakes-showcase">
+        <div id="cakes-showcase-title">Our Freshest Selections</div>
+        <div id="cakes-control-container">
+            <div id="cakes-showcase-control">
+                <div id="menu-options">
+                    <div id="menu-options-title">Explore our menu</div>
+                    <div id="menu-options-description">Explore our comprehensive dessert food offerings of donuts and coffee</div>
+                    <div id="menu-options-icon" class="cover"></div>
+                    <div class="menu-option">
+                        <div class="menu-option-title">Artisan Donuts</div>
+                        <div class="menu-option-description">Try our specialty donuts
+                            we’re famous for</div>
+                            <div class="donut-option">
+                                <div class="donut-right"></div>
+                                <div class="option-icon" style="background-image: url(pics/icons/iconfinder_4848473_branch_cereal_grain_nature_rice_icon_128px.png);"></div>
+                                <div class="option-description">
+                                    Yeast-raised doughnuts
+                                </div>
+                            </div>
+                            <div class="donut-option">
+                                <div class="donut-right"></div>
+                                <div class="option-icon" style="background-image: url(pics/icons/iconfinder_4301507_birdthday_cake_cheese_dessert_piece_icon_128px.png);"></div>
+                                <div class="option-description">
+                                    Cake doughnuts
+                                </div>
+                            </div>
+                        <div class="menu-option-icon cover" style="background-image: url(pics/icons/iconfinder_4053431_bakery_dessert_donut_doughnut_food_icon_256px.png);"></div>
+                    </div>
+                </div>
+                <div class="donut-option-right">
+                    <div id="donut-option-column">
+                        <div class="donut-option">
+                            <div class="donut-right"></div>
+                            <div class="option-icon" style="background-image: url(pics/icons/iconfinder_4848473_branch_cereal_grain_nature_rice_icon_128px.png);"></div>
+                            <div class="option-icon" style="background-image: url(pics/icons/iconfinder_6385543_fruit_healthy_juice_strawberry_vegan_icon_128px.png);"></div>
+                            <div class="option-description">
+                                Vegan yeast-raised doughnuts
+                            </div>
+                        </div>
+                        <div class="donut-option">
+                            <div class="donut-right"></div>
+                            <div class="option-icon" style="background-image: url(pics/icons/iconfinder_290146_buy_ecommerce_shop_shopping_store_icon_128px.png);"></div>
+                            <div class="option-description" style="color: #2aff00">
+                                All doughnuts
+                            </div>
+                        </div>
+                    </div>
+                    <div id="donut-option-column">
+                        <div class="donut-option">
+                            <div class="donut-right"></div>
+                            <div class="option-icon" style="background-image: url(pics/icons/iconfinder_4694936_allergens_allergy_badge_gluten_label_icon_128px.png);"></div>
+                            <div class="option-description">
+                                Gluten-free doughnuts
+                            </div>
+                        </div>
+                        <div class="donut-option">
+                            <div class="donut-right"></div>
+                            <div class="option-icon" style="background-image: url(pics/icons/iconfinder_5627013_baked_bakery_bread_oktoberfest_pastry_icon_128px.png);"></div>
+                            <div class="option-description">
+                                Choux doughnuts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="menu-option">
+                    <div class="menu-option-title">Specialty Coffee</div>
+                    <div class="menu-option-description">Quality coffee brewed fresh in our shops</div>
+                    <div class="menu-option-icon cover" style="background-image: url(pics/icons/iconfinder_889374_barista_coffee_coffee\ maker_cone_filter_icon_256px.png);"></div>
+                </div> -->
+                <div id="order-locations">
+                    <div id="order-locations-title">Order Here</div>
+                    <div id="order-locations-description">Use one of these services to get deliciousness sent to you</div>
+                    <div class="order-location">
+                        <div class="order-location-icon" style="background-image: url(pics/icons/services/UE.png);"></div>
+                        <div class="order-location-txt">Uber Eats</div>
+                        <div class="enve"></div>
+                    </div>
+                    <div class="order-location">
+                        <div class="order-location-icon" style="background-image: url(pics/icons/services/DD.png);"></div>
+                        <div class="order-location-txt">Door Dash</div>
+                        <div class="enve"></div>
+                    </div>
+                    <div class="order-location">
+                        <div class="order-location-icon " style="background-image: url(pics/icons/services/ML.png);"></div>
+                        <div class="order-location-txt">Menu Log</div>
+                        <div class="enve"></div>
+                    </div>
+                    <div class="order-location">
+                        <div class="order-location-icon " style="background-image: url(pics/icons/services/DO.png);"></div>
+                        <div class="order-location-txt">Deliveroo</div>
+                        <div class="enve"></div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div id="cakes-content">
+            <div id="menu-title">All Donuts</div>
+            <div id="menu-subtitle">Pick any 6 donuts for $24</div>
+            <div id="menu-display">
+                <div class="row-item" id="row-item-1">
+                    <!-- <div class="menu-item">
+                        <div class="menu-item-icon" style="background-image: url(pics/donuts/ARTISAN_GALAKDOUGH.png)"></div>
+                        <div class="menu-item-title">The Galakdough</div>
+                        <div class="menu-item-description">
+                            Filled with smooth vanilla custard then crowned with a baked filo triangle & a pipette filled with cinnamon spiced sugar syrop. It’s a spin on the traditional Greek galaktoboureko, aka the Greek custard pie.
+                        </div>
+                        <div class="tag yeast">yeast-raised</div>
+                    </div> -->
+                </div>
+                <div class="row-item" id="row-item-2"></div>
+                <div class="row-item" id="row-item-3"></div>
+                <div class="row-item" id="row-item-4"></div>
+                <div class="row-item" id="row-item-5"></div>
+            </div>
+        </div>
+    </div>
+    <div id="logo-holder">
+        <div class="background-overlay" style="background-color: #000;"></div>
+    </div>
+    <div id="socials">
+        <div id="socials-txt-container">
+            <div id="socials-title">Let's stay in touch</div>
+            <div id="socials-subtitle">Follow our social media for updates on our delicious goodness</div>
+            <div id="socials-container">
+                <a href="https://facebook.com/theoakleighdoughnutco" target="_blank"><div class="social-icon" style="background-image: url(pics/icons/iconfinder_1161953_instagram_icon_128px.png);"></div></a>
+                <a href="https://www.instagram.com/todco.theoakleighdoughnutco/" target="_blank"><div class="social-icon" style="background-image: url(pics/icons/iconfinder_104498_facebook_icon_128px.png);"></div></a>
+            </div>
+        </div>
+        <div id="feed">
+            <div id="section">
+                <div id="inner-section" style="position: absolute;">
+                    <div class="section-tile" id="i0"></div>
+                    <div class="section-tile" id="i1"></div>
+                    <div class="section-tile" id="i2"></div>
+                    <div class="section-tile" id="i3"></div>
+                    <div class="section-tile" id="i4"></div>
+                    <div class="section-tile" id="i5"></div>
+                    <div class="section-tile" id="i6"></div>    
+                </div>
+                <div id="outer-section" style="position: absolute; left: 0%; top: 100%;">
+                    <div class="section-tile" id="o0"></div>
+                    <div class="section-tile" id="o1"></div>
+                    <div class="section-tile" id="o2"></div>
+                    <div class="section-tile" id="o3"></div>
+                    <div class="section-tile" id="o4"></div>
+                    <div class="section-tile" id="o5"></div>
+                    <div class="section-tile" id="o6"></div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="liner" class="cover"></div>
+    <div id="footer">
+        <div id="footer-inner">
+            <div id="right-most" class="footer-core" style="width: 150px;">
+                <div id="todco-footer"></div>
+            </div>
+            <div class="footer-core">
+                <div class="footer-core-title">
+                    Opening hours
+                </div>
+                <div class="footer-content">
+                    Everyday, 10am to 9:30pm<br><br>
+                    We're only closed on Christmas and New Years' Day.
+                </div>
+            </div>
+            <div class="footer-core">
+                <div class="footer-core-title">
+                    Our stores
+                </div>
+                <div class="footer-content">
+                    OAKLEIGH SHOP<br>
+                    36 Portman St, Oakleigh VIC 3166
+                    (03) 9569 8172
+                    <br><br>SOUTH YARRA SHOP<br>
+                    187 Commercial Rd, South Yarra VIC 3141
+                    (03) 9826 2562
+                </div>
+            </div>
+            <div class="footer-core">
+                <div class="footer-core-title">
+                    Store status
+                </div>
+                <div class="footer-content">
+                    <a id="store-status-footer">We are open right now</a><br><br>
+                    <a href="https://www.instagram.com/theoakleighdoughnutco/" target="_blank"><div class="social-icon-footer" style="background-image: url(pics/icons/iconfinder_1161953_instagram_icon_128px.png);"></div></a>
+                    <a href="https://www.facebook.com/todco.theoakleighdoughnutco/" target="_blank"><div class="social-icon-footer" style="background-image: url(pics/icons/iconfinder_104498_facebook_icon_128px.png);"></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var config = {
+            max_tiles: 7
+        }
+
+        var opening = new Date().setHours(10).toLocaleString("en-AU", { timeZone: "Australia/Melbourne" });
+        var closing = new Date().setHours(21.5).toLocaleString("en-AU", { timeZone: "Australia/Melbourne" });
+        
+        var date = new Date().toLocaleString("en-AU", { timeZone: "Australia/Melbourne" });
+
+        if (date < opening && date > closing){
+            document.getElementById("store-status-txt").innerHTML = "WE ARE CLOSED";
+            $("#store-status").removeClass("store-open");
+            $("#store-status").addClass("store-closed");
+            $("#store-status-txt").removeClass("txt-store-open");
+            $("#store-status-txt").addClass("txt-store-closed");
+            $("#availability-text").html("We're closed right now. We open at 10am");
+            $("#store-status-footer").html("We're closed right now").css({ "color": "red" });
+        }
+
+        var donuts = [
+            {
+                "name": "The Galakdough",
+                "description": "Filled with smooth vanilla custard then crowned with a baked filo triangle & a pipette filled with cinnamon spiced sugar syrop. It’s a spin on the traditional Greek galaktoboureko, aka the Greek custard pie.",
+                "image": "pics/donuts/ARTISAN_GALAKDOUGH.png",
+                "tag": "yeast-raised",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Nutella Snow",
+                "description": "Packed with Nutella and dusted with snow sugar.",
+                "image": "pics/donuts/ARTISAN_NUTELLA_SNOW.png",
+                "tag": "yeast-raised",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Passion Fruit Meringue Pie",
+                "description": "Packed with homemade passion fruit curd and topped with toasted meringue.",
+                "image": "pics/donuts/ARTISAN_PASSION_FRUIT_MERINGUE_PIE.png",
+                "tag": "yeast-rasied",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Vanilla OG",
+                "description": "Packed with our signature vanilla original glaze.",
+                "image": "pics/donuts/ARTISAN_VANILLA_OG.png",
+                "tag": "yeast-rasied",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Strawberry Cheesecake",
+                "description": "A smooth cream cheese centre then topped with strawberry icing & biscuit crumble.",
+                "image": "pics/donuts/ARTISAN_STRAWBERRY_CHEESECAKE.png",
+                "tag": "yeast-rasied",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Sugar Custard",
+                "description": "Packed with smooth vanilla custard then rolled in sugar",
+                "image": "pics/donuts/ARTISAN_SUGAR_CUSTARD.png",
+                "tag": "yeast-raised",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Raspberry Jam",
+                "description": "Filled with Yarra Valley raspberry jam then rolled in sugar",
+                "image": "pics/donuts/ARTISAN_RASPBERRY_JAM.png",
+                "tag": "yeast-rasied",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Cookies & Creme",
+                "description": "Topped with Swiss meringue buttercream then dunked in smashed Oreo biscuit",
+                "image": "pics/donuts/ARTISAN_COOKIES_N_CREAM.png",
+                "tag": "yeast-raised",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Life's A Picnic",
+                "description": "A ring doughnut dipped in milk chocolate, house made nut & rice bubble crunch then finished with salted caramel drizzle",
+                "image": "pics/donuts/ARTISAN_LIFES_A_PICNIC.png",
+                "tag": "yeast-rasied",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Peanut Butter",
+                "description": "A ring dougnut topped with peanut butter Swiss meringue buttercream then drizzled with peanut butter & milk chocolate",
+                "image": "pics/donuts/ARTISAN_PEANUT_BUTTER.png",
+                "tag": "yeast-raised",
+                "tag_class": "yeast"
+            },
+            {
+                "name": "Bakladough",
+                "description": "A vanilla cake doughnut coated with traditional Baklava icing then dunked in a walnut, pistachio, & filo pastry crumb. It's our take on the popular dessert, Baklava, which is served in many countries around the world.",
+                "image": "pics/donuts/ARTISAN_BAKLADOUGH.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Sour Cherry",
+                "description": "A vanilla cake doughnut topped with sour cherry icing, a classic Greek flavour (Vyssino).",
+                "image": "pics/donuts/ARTISAN_SOUR_CHERRY.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Salted Caramel Choc",
+                "description": "Glazed with house made salted caramel then finished off with milk chocolate",
+                "image": "pics/donuts/ARTISAN_SALTED_CARAMEL_CHOC.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Rose Meringue",
+                "description": "A vanilla cake doughnut topped with rose icing, baked meringue drops then finished with white chocolate drizzle",
+                "image": "pics/donuts/ARTISAN_ROSE_MERINGUE.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Birthday Cake",
+                "description": "A vanilla cake doughnut topped with Swiss meringue buttercream then finished with rainbow sprinkles",
+                "image": "pics/donuts/ARTISAN_BIRTHDAY_CAKE.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Choc Freckle",
+                "description": "A vanilla cake doughnut dipped in milk chocolate then finished with 100's & 1000's",
+                "image": "pics/donuts/ARTISAN_CHOC_FRECKLE.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "White Choc Freckle",
+                "description": "A vanilla cake doughnut dipped in white chocolate then finished with rainbow sprinkles",
+                "image": "pics/donuts/ARTISAN_WHITE_CHOC_FRECKLE.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Cinnamon Sugar",
+                "description": "Rolled in cinnamon sugar",
+                "image": "pics/donuts/ARTISAN_CINNAMON_SUGAR.png",
+                "tag": "cake-doughnut",
+                "tag_class": "cake-doughnut"
+            },
+            {
+                "name": "Vegan Raspberry Jam",
+                "description": "A yeast raised doughnut filled with Yarra Valley raspberry jam then rolled in sugar",
+                "image": "pics/donuts/ARTISAN_VEGAN_RASPBERRY_JAM.png",
+                "tag": "vegan-yeast-raised",
+                "tag_class": "vegan-yeast-raised"
+            },
+            {
+                "name": "Vegan Biscoff Creme",
+                "description": "Topped with vegan camaralised biscuit buttercream then finished with Biscoff drizzle with a biscuit",
+                "image": "pics/donuts/ARTISAN_VEGAN_BISCOFF_CREME.png",
+                "tag": "vegan-yeast-raised",
+                "tag_class": "vegan-yeast-raised"
+            },
+            {
+                "name": "Vegan Cookies & Creme",
+                "description": "A yeast raised doughnut topped with vegan Oreo biscuit buttercream & smashed Oreo biscuit",
+                "image": "pics/donuts/ARTISAN_VEGAN_COOKIES_N_CREME.png",
+                "tag": "vegan-yeast-raised",
+                "tag_class": "vegan-yeast-raised"
+            },
+            {
+                "name": "Vegan Strawberry",
+                "description": "A yeast raised dougnut with strawberry icing then finished with rainbow sprinkles",
+                "image": "pics/donuts/ARTISAN_VEGAN_STRAWBERRY.png",
+                "tag": "vegan-yeast-raised",
+                "tag_class": "vegan-yeast-raised"
+            },
+            {
+                "name": "Doughloumba",
+                "description": "A golden friend choux pastry doughnut soaked in sweet sugar syrup. We've reinvented a classic Toulumba recipe, which is a popular sweet served in Europe and the Middle East",
+                "image": "pics/donuts/ARTISAN_DOUGHLOUMBA.png",
+                "tag": "choux-pastry",
+                "tag_class": "choux-pastry"
+            },
+            {
+                "name": "Gluten-Free Baked Brownie",
+                "description": "A decadent oven baked chcocolate brownie topped with white icing and peppermint Swiss meringue buttercream. <a style='color: red;'><br><br>*Made in the same kitchen that contains gluten</a>",
+                "image": "pics/donuts/ARTISAN_GLUTEN_FREE_BAKED_BROWNIE.png",
+                "tag": "gluten-free",
+                "tag_class": "gluten-free"
+            }
+        ];
+
+        function loadDonuts(){
+
+            var rowNo = 1;
+
+            for (var i = 0; i < donuts.length; i++){
+
+                $("#row-item-" + rowNo).append(`
+                    <div class="menu-item">
+                        <div class="menu-item-icon" style="background-image: url(`+donuts[i].image+`)"></div>
+                        <div class="menu-item-price">$4.50</div>
+                        <div class="menu-item-title">`+donuts[i].name+`</div>
+                        <div class="menu-item-description">`+donuts[i].description+`</div>
+                        <div class="tag `+donuts[i].tag_class+`">`+donuts[i].tag+`</div>
+                    </div>
+                `);
+
+                rowNo += 1;
+
+                if (rowNo == 6){
+                    rowNo = 1;
+                }
+
+            }
+
+        }
+
+        var selections = {
+            "i": [],
+            "o": []
+        }
+
+        function setSelection(x){
+
+            for (var i = 0; i < config.max_tiles; i++){
+
+                var img_src = randSrc();
+                //document.getElementById(x + i).style.backgroundImage = "pics/instagram/" + img_src;
+                
+                $("#" + x + i).css({
+                    "background-image": "url(pics/instagram/"+ img_src+")"
+                })
+
+                selections[x].push(img_src);
+
+            }
+
+        }
+
+        function randSrc(){
+
+            var selection = Math.floor(Math.random() * 42) + ".jpg";
+
+            while ((selections.i.indexOf(selection) !== -1) || (selections.o.indexOf(selection) !== -1)){
+
+                selection = Math.floor(Math.random() * 42) + ".jpg";
+
+            }
+
+            return selection;
+
+        }
+
+        var current_section = "inner-section";
+        var opposing = "outer-section";
+
+        function moveSections(){
+
+            $("#" + current_section).animate({
+                top: "-100%"
+            }).promise().then(()=>{
+                
+                $("#" + opposing).css({
+                    top: "100%"
+                });
+
+                selections.o = [];
+                setSelection((current_section.charAt(0)) == "o" ? "i" : "o");
+
+            });
+
+            $("#" + opposing).animate({
+                top: "0%"
+            });
+
+            if (current_section == "inner-section"){
+                current_section = "outer-section";
+                opposing = "inner-section";
+                
+                var x = selections.i;
+                var y = selections.o;
+
+                selections.o = x;
+                selections.i = y;
+
+            } else {
+                current_section = "inner-section";
+                opposing = "outer-section";
+
+                var x = selections.o;
+                var y = selections.i;
+
+                selections.o = y;
+                selections.i = x;
+            }
+
+            // setTimeout(()=>{
+                
+            //     $("#" + opposing).css({
+            //         top: "100%"
+            //     });
+
+            //     // selections.o = [];
+
+            //     // //setSelection("o");
+            
+            // }, 600);
+
+        }
+
+        setInterval(moveSections, 3000);
+
+        setTimeout(function(){
+            window.location.reload();
+        }, 300000)
+
+        setSelection("o");
+        setSelection("i");
+
+        loadDonuts();
+
+    </script>
+
+</html>

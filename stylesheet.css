@@ -1,0 +1,1057 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar { 
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transition: 0.2s ease all;
+    /* -webkit-box-shadow: inset 0px 50px 22px -11px #041B9C; 
+    box-shadow: inset 0px 50px 22px -11px #041B9C; */
+    height: 150px;
+    width: 100%;
+    z-index: 999;
+}
+
+#logo {
+    position: relative;
+    height: 135px;
+    width: 170px;
+    background-image: url("pics/todco-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contents {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: table;
+    z-index: 999;
+}
+
+#todco-txt-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: middle;
+}
+
+#title-txt {
+    position: relative;
+    font-size: 65px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#slider-left, #slider-right {
+    display: table-cell;
+    font-size: 75px;
+    color: #fff;
+    z-index: 999;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#slider-left-contents {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("pics/icons/iconfinder_211689_left_arrow_icon_256px.png");
+    filter: drop-shadow(5px 6px 0px #152372);
+}
+
+#est-txt, #year-txt {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 100;
+    font-size: 35px;
+    z-index: 999;
+    font-family: "Roboto Mono";
+    color: #fff;
+}
+
+#slider-right-contents {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%); 
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("pics/icons/iconfinder_211689_right_arrow_icon_256px.png");
+    filter: drop-shadow(5px 6px 0px #152372);
+}
+
+.slider-nav {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-shadow {
+    font-family: "Roboto Mono";
+    color: #fff;
+    text-shadow: 5px 6px 0px #152372;
+}
+
+#navbar-inner {
+    position: relative;
+    width: 75%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-right {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    right: 0px;
+}
+
+.navbar-text {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    font-size: 25px;
+    margin-right: 45px;
+    cursor: pointer;
+    transition: 0.7s ease all;
+}
+
+.navbar-text:hover {
+    text-decoration: underline;
+}
+
+.txt-selected {
+    text-decoration: underline !important;
+    font-weight: 400;
+}
+
+#showcase-slider {
+    position: relative;
+    height: 950px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("pics/slider/144aba6c568fde2fce1a77afef2ebf5c_L.jpg");
+    background-attachment: fixed;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#slider-buttons {
+    position: relative;
+    display: block;
+    text-align: middle;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 65px;
+}
+
+.slider-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    width: 160px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Inter";
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 16px;
+    border-bottom: 4px solid #00093F;
+}
+
+.slider-button-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 25px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.slider-button-txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#deliveries {
+    position: relative;
+    background-color: #152372;
+}
+
+#slider-dots {
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 55px;
+}
+
+.slider-dot {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    filter: drop-shadow(7px 6px 0px #152372);
+}
+
+#welcome-items {
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #122069;
+    background-image: url("pics/slider/G10_PATTERN.png");
+}
+
+#welcome-box-items {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.welcome-box {
+    border-radius: 24px;
+    padding: 40px;
+    background-color: #0A175A;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left !important;
+}
+
+.welcome-box-title {
+    position: relative;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Inter";
+    color: #fff;
+    margin-bottom: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.welcome-box-text {
+    position: relative;
+    font-family: "Inter";
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.welcome-box-todco {
+    position: relative;
+    /* right: 30px; */
+    height: 30px;
+    width: 90px;
+    background-image: url("pics/todco-logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    float: right;
+}
+
+#cooking {
+    position: relative;
+    width: 450px;
+    padding: 20px;
+    background-color: #081247;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+#cooking:hover {
+    background-color: #060d30;
+}
+
+#cooking-icon {
+    position: relative;
+    background-color: #FFD84E;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("pics/icons/iconfinder_3793946_furniture_home_house_living_offie_icon_256px.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cooking-text {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "Inter";
+    margin-left: 7px;
+}
+
+#cooking-info-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cooking-arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 35px;
+    background-image: url("pics/icons/iconfinder_4115224_arrow_arrow\ left_right_icon_256px.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.todco-location {
+    position: relative;
+    width: 370px;
+    padding: 15px;
+    box-sizing: border-box;;
+    background-color: #081247;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "Inter";
+}
+
+.location-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.location-detail {
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #121E5B;
+    border-radius: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.location-detail:hover {
+    background-color: #1a2c88;
+}
+
+#welcome-init {
+    width: 600px;
+}
+
+#welcome-locations {
+    width: 750px;
+}
+
+.detail-icon {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-image: url("pics/icons/iconfinder_352521_location_on_icon_256pxB.png");
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.detail-txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#availability {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: table;
+    width: 100%;
+    background-image: url("pics/slider/9962afd4d7801adbe96e49a2f2eab69f_L.jpg");
+    background-attachment: fixed;
+}
+
+#availability-txt {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    color: #fff;
+    width: 100%;
+    font-size: 25px;
+}
+
+#store-status {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.store-open {
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #49ff18,
+                0px 0px 10px 0px #fff,
+                inset 0px 0px 10px 0px #27FF70,
+                inset 0px 0px 10px 0px #fff;
+}
+
+.txt-store-open {
+    color: #fff;
+    /* text-shadow: 0px 0px 2px #49ff18; */
+    text-shadow: 0 0 5px #FFF, 
+                 0 0 10px #FFF, 
+                 0 0 15px #FFF, 
+                 0 0 15px #49ff18, 
+                 0 0 50px #49ff18, 
+                 0px 0px 2px rgba(206,89,55,0);
+    border-radius: 2rem;
+}
+
+.store-closed {
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #ff0000,
+                0px 0px 10px 0px #fff,
+                inset 0px 0px 10px 0px #ff0000,
+                inset 0px 0px 10px 0px #fff;
+}
+
+#flag {
+    position: relative;
+    height: 20px;
+    width: 40px;
+    background-image: url("pics/AUSTRALIA.png");
+    border-radius: 5px;
+}
+
+#store-status-footer {
+    color: #49ff18;
+}
+
+.txt-store-closed {
+    color: #fff;
+    /* text-shadow: 0px 0px 2px #49ff18; */
+    text-shadow: 0 0 5px #FFF, 
+                 0 0 10px #FFF, 
+                 0 0 15px #FFF, 
+                 0 0 15px #ff0000, 
+                 0 0 50px #ff0000, 
+                 0px 0px 2px rgba(206,89,55,0);
+    border-radius: 2rem;
+}
+
+#availability-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Inter";
+    font-weight: 400;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#availability-arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 40px;
+    background-image: url("pics/icons/iconfinder_4115224_arrow_arrow\ left_right_icon_256px.png")
+}
+
+#cakes-showcase {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #122069;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#cakes-showcase-title {
+    position: relative;
+    margin-bottom: 35px;
+    font-size: 35px;
+    color: #fff;
+    font-family: "Inter";
+    text-align: center;
+}
+
+#cakes-content {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#order-locations {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #081247;
+    width: 250px;
+    padding: 25px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "Inter";
+}
+
+#order-locations-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#order-locations-description {
+    margin-bottom: 15px;
+}
+
+.order-location {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #0E1F76;
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.order-location-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.order-location-txt {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#menu-options {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 300px;
+    font-family: "Inter";
+    color: #fff;
+    background-color: #121E5B;
+}
+
+#menu-options-title {
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Inter";
+}
+
+#menu-options-icon {
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    right: 0px;
+    top: 0px;
+    background-image: url("pics/icons/iconfinder_6811545_book_cookbook_cuisine_culinary_menu_icon_128px.png");
+}
+
+.menu-option {
+    position: relative;
+    display: block;
+    background-color: #081247;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-option-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.menu-option-description {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.menu-option-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#menu-display {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+#menu-title {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-size: 30px;
+}
+
+#menu-subtitle {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 35px;
+    color: #fff;
+    font-family: "Inter";
+    font-size: 20px;
+}
+
+.enve {
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background-image: url("pics/icons/ENVE.png");
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    width: 100%;
+    background-color: #12214D;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "Inter";
+    margin-bottom: 10px;
+    background-image: url("pics/icons/PATTERN.png");
+}
+
+.row-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 5px;
+    padding-right: 40px;
+
+}
+
+.menu-item-title {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.menu-item-icon {
+    position: relative;
+    height: 70px;
+    width: 90px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+
+.tag {
+    position: relative;
+    padding: 5px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    text-align: center;
+    width: 150px;
+    flex: auto;
+    font-size: 15px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.yeast {
+    background-color: #00D923;
+}
+
+.cake-doughnut {
+    background-color: #d85d00;
+}
+
+.vegan-yeast-raised {
+    background-color: #d100d8;
+}
+
+.menu-item-price {
+    color: #7580ff;
+    margin-bottom: 5px;
+}
+
+.choux-pastry {
+    background-color: #00add8;
+}
+
+.gluten-free {
+    background-color: #004cd8;
+}
+
+#cakes-showcase-control {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    background-color: #121E5B;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#cakes-control-container {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.donut-option {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #0E1F76;
+    padding: 15px;
+    width: 130px;
+    border-radius: 7px;
+    font-weight: 400;
+    height: auto;
+    color: #fff;
+    font-family: "Inter";
+    margin-right: 2.5px;
+    cursor: pointer;
+    transition: 0.1s ease all;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.donut-option:hover {
+    background-color: #1b33a7;
+}
+
+.option-icon {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.donut-option-right {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    background-color: #081247;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#donut-option-column {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    margin-right: 3px;
+}
+
+.donut-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+    top: 10px;
+    background-image: url("pics/icons/iconfinder_4053431_bakery_dessert_donut_doughnut_food_icon_256px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#logo-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: table;
+    text-align: center;
+    background-image: url("pics/slider/092021-4122-Screen_Shot_2018-04-16_at_9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#logo-inside {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("pics/todco-coloured.png");
+}
+
+#socials { 
+    position: relative;
+    width: 100%;
+    background-color: #121F45;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#socials-txt-container {
+    position: relative;
+    width: 65%;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: "Inter";
+    color: #fff;
+}
+
+#socials-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#socials-subtitle {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+#feed {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+#section {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 90%;
+    height: 280px;
+    transition: 0.1s ease all;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-tile {
+    position: relative;
+    height: 100%;
+    width: 220px;
+    height: 280px;
+    display: inline-block;
+    visibility: middle;
+    cursor: pointer;
+    background-color: #31416F;
+    border-radius: 15px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    background-size: 40px 40px;
+    background-color: #0E1F76;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.social-icon-footer {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#socials-container {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    right: 0px;
+    top: 0px;
+}
+
+#liner {
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-attachment: fixed;
+    background-image: url("pics/slider/d3818aa65f1ff77c0b774d0423046f3e.webp");
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000126;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#footer-inner {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-core {
+    position: relative;
+    width: 250px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#todco-footer {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("pics/todco-white.png");
+}
+
+.footer-core-title {
+    position: relative;
+    display: block;
+    font-family: "Inter";
+    color: #fff;
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer-content {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ccc;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+}
